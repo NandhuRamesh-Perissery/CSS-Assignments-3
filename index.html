@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                'sm': '640px',
+                // => @media (min-width: 640px) { ... }
+          
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+          
+                'lg': '1024px',
+                // => @media (min-width: 1024px) { ... }
+          
+                'xl': '1280px',
+                // => @media (min-width: 1280px) { ... }
+          
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+              },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="px-full ">
+        <img src="./CSS-Assignment-3/03_flowerCut.png" class="absolute bottom-0 right-0 z-[-1] max-w-[50%] mx-auto lg:w-[500px]" alt="">
+
+        <!-- Tailwind CSS NAV Bar -->
+
+       <nav class="bg-white-900 h-24 flex justify-between items-center">
+           <div class="flex items-center h-full">
+   <img class="ml-20" src="CSS-Assignment-3/Logo.svg" alt="">
+           </div>
+          
+            
+            <ul class="hidden lg:flex gap-10">
+              <li class="text-xl font-bold hover:text-green-900 hover:underline cursor-pointer">Home</li>
+              <li class="text-xl font-bold hover:text-green-900 hover:underline cursor-pointer">Collection</li>
+              <li class="text-xl font-bold hover:text-green-900 hover:underline cursor-pointer">Shop</li>
+              <li class="text-xl font-bold hover:text-green-900 hover:underline cursor-pointer">About</li>
+              <li class="text-xl font-bold hover:text-green-900 hover:underline cursor-pointer">Contact</li>
+           
+            </ul>
+           
+           <div class="flex items-center gap-6 mr-36">
+            <i class="cursor-pointer hover:text-green-900 fa-solid fa-bag-shopping"></i>
+            <i class="cursor-pointer hover:text-green-900 fa-solid fa-user"></i>
+            <i class="cursor-pointer hover:text-green-900 fa-solid fa-magnifying-glass"></i>
+           </div>
+       </nav>
+       <section class="h-[450px] flex flex-col justify-center">
+        <div class="ml-20 py-10">
+            <h1 class="text-5xl font-bold">MONSTERA</h1><br>
+            <p class="w-[400px] lg:w-[550px] xl:w-[700px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error vero earum eligendi.Ut eligendi at non quos ipsam deleniti optio quae ex expedita voluptatibus exercitationem veniam, officiis molestias corrupti asperiores.Lorem ipsum, dolor sit amet consectetur adipisicing elit.Error vero earum eligendi.Ut eligendi at non quos ipsam deleniti optio quae expeditavoluptatibus exercitationem veniam, officiis molestias corrupti asperiores.</p>
+        </div>
+        <div >
+            <button class="bg-green-900 rounded-full px-10 py-2 text-white ml-20 text-xl font-bold+`++++-" type="submit">DISCOVER <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </section>
+        <section class="mt-10 hidden 2xl:flex items-center">
+            <div class="flex gap-2 ml-20">
+           <img src="./CSS-Assignment-3/water_plant-removebg-preview.png" alt="">
+           <div >
+            <h3 class="text-xl font-bold">Feeding</h3>
+            <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>     
+           </div>
+          
+            </div>
+
+            <div class=" flex gap-2">
+              <i class="fa-regular fa-lightbulb text-6xl"></i>
+              <div>
+                <h3 class="text-xl font-bold">Light</h3>
+                <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+              </div>    
+             </div>
+             <div class="flex gap-2" >
+              <i class="fa-solid fa-trowel text-6xl"></i>
+              <div>
+              <h3 class="text-xl font-bold">Care</h3>
+                <p class="w-[250px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+              </div>
+
+             </div>
+             
+            
+        </section>
+       
+      
+      
+</div>
+</body>
+</html>
